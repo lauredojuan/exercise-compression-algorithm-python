@@ -5,10 +5,18 @@ import re
 symbols = {
     "implementation": "🤯",
     "practicality": '🤩',
-    "better": '😅',
-    "than": '😘',
-    "Although": "🥺"
+    "Although": "🥺",
+    "is better than": "✅",
+    "to explain": '😘',
+    "silen": '😅',
+    "the": "🍬",
+    "never": "🍭",
+    "one": "🎯",
+    "compl": "🍩",
+    "plicit": "❌"   
 }
+
+
 
 def compress(content):
     compressed_content = content
