@@ -1,3 +1,4 @@
+
 import sys, time
 from pathlib import Path
 from compress import compress
@@ -11,8 +12,9 @@ f.close() #close the file after finishing reading it.
 start_time = time.time() # capture time before compressing
 _compressed = compress(content) # calling the compression algorithm
 length_in_time = time.time() - start_time # capture time after compressing and meassure the differenec
-_decompressed = decompress(_compressed) # calling the decompression algorithm
 
+_decompressed = decompress(_compressed) # calling the decompression algorithm
+# print(_compressed)
 # save the compressed version of the document
 f = open("data/compressed.txt","w+")
 f.write(compress(content))

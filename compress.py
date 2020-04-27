@@ -11,10 +11,10 @@ symbols = {
 }
 
 def compress(content):
+    compressed_content = content
+    for x in symbols:
+        compressed_local = compressed_content.replace(x, symbols[x])
+        compressed_content = compressed_local
 
-    compressed_content = ''
-
-    # your code inside this "compress" function
-
-    return content
+    return compressed_content
     

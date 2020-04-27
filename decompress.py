@@ -4,8 +4,10 @@ import re
 
 def decompress(compressed_content):
     from compress import symbols
-
-    # your code inside this "decompress" function
+    decompressed_content = compressed_content
+    for x in symbols:
+        decompressed_local = decompressed_content.replace(symbols[x], x)
+        decompressed_content = decompressed_local
     
-    return compressed_content
+    return decompressed_content
     
